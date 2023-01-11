@@ -5,9 +5,10 @@ body{
     margin: 0;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 header{
-    position: absolute;
+    position: relative;
     width: 100vw;
     padding-top: 39px;
     display: flex;
@@ -71,7 +72,7 @@ header{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 .discount{
-    margin-top: 420px;
+    margin-top: 187px;
     color: white;
     font-family: "headFont";
     font-size: 70px;
@@ -221,4 +222,135 @@ header{
     src: url(fontsPList/sverdlovsk/Sverdlovsk.otf);
     font-style: normal;
     font-weight: 200;
+}
+
+/* Mobile */
+
+/* .backgroundMan {
+    position: absolute;
+    pointer-events: none;
+    left: -596px;
+    width: 100%;
+} /*
+
+/* .manImg {
+    width: 714.28px;
+    height: 39vh;
+    opacity: 57.67%;
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255) inset;
+} */
+
+/* .blure {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: -33px;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+} */
+
+@media screen and (max-width: 490px) {
+    body {
+        width: 490px;
+    }
+    header {
+        width: 490px;
+        justify-self: baseline;
+        padding-top: 24px;
+
+    }
+    .topButtons {
+        display: none;
+    }
+    .phoneNumber {
+        margin-right: 0;
+        margin-left: 0;
+        white-space: nowrap;
+        line-height: normal;
+        margin-right: 14.5px;
+    }
+    .cutokImg {
+        position: relative;
+        z-index: 2;
+        margin-top: 0;
+        margin-left: 28px;
+    }
+    .backgroundMan {
+        width: 490px;
+        height: 580px;
+        overflow-x: hidden;
+    }
+    .manImg {
+        width: 754px;
+        height: 580px;
+        position: relative;
+        right: 158px;
+        opacity: 95.67%;
+    }
+    .blure {
+        width: 754px;
+        height: 580px;
+    }
+    .centerElements {
+        width: 490px;
+        justify-self: normal;
+    }
+    .discount {
+        margin-top: 30px;
+        font-size: 50px;
+        line-height: 81px;
+        letter-spacing: 7.52px;
+        text-align: center;
+    }
+    .signUp {
+        margin-top: 37px;
+    }
+    .headPrice {
+        margin-top: 117px;
+        font-size: 50px;
+        line-height: 81px;
+        letter-spacing: 7.52px;
+    }
+    .priceText {
+        width: 490px;
+        font-size: 21px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        justify-self: baseline;
+    }
+    .columnOne {
+        width: 217px;
+    }
+    .priceName {
+        width: 418px;
+    }
+    .priceCost {
+        width: 5px;
+    }
+    .logoBox {
+        margin-top: 0px;
+        width: 490px;
+        height: 178px;
+        opacity: 133%;
+    }
+    .logoBox img {
+        width: 60px;
+        height: 60px;
+        margin-left: 44px;
+    }
+    .address {
+        margin-top: 100px;
+    }
+    .bottomButtons {
+        margin-top: 0;
+    }
+    .bottomElements h4 {
+        margin-bottom: 0;
+    }
+    .bottomElements {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
